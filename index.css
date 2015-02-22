@@ -43,6 +43,12 @@ input[type="checkbox"] {
 	outline: none;
 }
 
+button,
+input[type=button],
+input[type=submit] {
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
