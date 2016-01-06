@@ -35,9 +35,8 @@ body {
 	font-weight: 300;
 }
 
-button,
-input[type="checkbox"] {
-	outline: none;
+:focus {
+	outline: 0;
 }
 
 .hidden {
@@ -93,7 +92,6 @@ input[type="checkbox"] {
 	font-weight: inherit;
 	line-height: 1.4em;
 	border: 0;
-	outline: none;
 	color: inherit;
 	padding: 6px;
 	border: 1px solid #999;
