@@ -1,6 +1,5 @@
 {
   "name": "todomvc-app-css",
-  "style": "index.css",
   "version": "2.0.6",
   "description": "CSS for TodoMVC apps",
   "license": "CC-BY-4.0",
@@ -22,5 +21,6 @@
     "css",
     "style",
     "stylesheet"
-  ]
+  ],
+  "style": "index.css"
 }
