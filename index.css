@@ -37,6 +37,12 @@ body {
 	outline: 0;
 }
 
+button,
+input[type=button],
+input[type=submit] {
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
