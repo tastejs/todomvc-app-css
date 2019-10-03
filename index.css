@@ -24,7 +24,7 @@ body {
 	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
 	background: #f5f5f5;
-	color: #4d4d4d;
+	color: #111111;
 	min-width: 230px;
 	max-width: 550px;
 	margin: 0 auto;
@@ -52,27 +52,27 @@ body {
 .todoapp input::-webkit-input-placeholder {
 	font-style: italic;
 	font-weight: 300;
-	color: #111111;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp input::-moz-placeholder {
 	font-style: italic;
 	font-weight: 300;
-	color: #111111;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp input::input-placeholder {
 	font-style: italic;
 	font-weight: 300;
-	color: #111111;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp h1 {
 	position: absolute;
-	top: -155px;
+	top: -140px;
 	width: 100%;
-	font-size: 100px;
-	font-weight: 100;
+	font-size: 80px;
+	font-weight: 200;
 	text-align: center;
 	color: #b83f45;
 	-webkit-text-rendering: optimizeLegibility;
@@ -213,11 +213,12 @@ body {
 	display: block;
 	line-height: 1.2;
 	transition: color 0.4s;
-	font-weight: bolder;
+	font-weight: 400;
+	color: #4d4d4d;
 }
 
 .todo-list li.completed label {
-	color: #d9d9d9;
+	color: #cdcdcd;
 	text-decoration: line-through;
 }
 
@@ -260,7 +261,7 @@ body {
 	padding: 10px 15px;
 	height: 20px;
 	text-align: center;
-	font-size: large;
+	font-size: 15px;
 	border-top: 1px solid #e6e6e6;
 }
 
@@ -334,7 +335,7 @@ html .clear-completed:active {
 .info {
 	margin: 65px auto 0;
 	color: #4d4d4d;
-	font-size: 10px;
+	font-size: 11px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 	text-align: center;
 }
