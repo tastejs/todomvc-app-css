@@ -33,10 +33,6 @@ body {
 	font-weight: 300;
 }
 
-:focus {
-	outline: 0;
-}
-
 .hidden {
 	display: none;
 }
@@ -377,4 +373,10 @@ html .clear-completed:active {
 	.filters {
 		bottom: 10px;
 	}
+}
+
+:focus,
+.toggle:focus + label,
+.toggle-all:focus + label {
+	outline:  #CF7D7D solid;
 }
