@@ -47,20 +47,20 @@ body {
 
 .todoapp input::-webkit-input-placeholder {
 	font-style: italic;
-	font-weight: 300;
-	color: #757575;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp input::-moz-placeholder {
 	font-style: italic;
-	font-weight: 300;
-	color: #757575;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp input::input-placeholder {
 	font-style: italic;
-	font-weight: 300;
-	color: #757575;
+	font-weight: 400;
+	color: rgba(0, 0, 0, 0.4);
 }
 
 .todoapp h1 {
@@ -96,6 +96,7 @@ body {
 
 .new-todo {
 	padding: 16px 16px 16px 60px;
+	height: 65px;
 	border: none;
 	background: rgba(0, 0, 0, 0.003);
 	box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
@@ -118,21 +119,25 @@ body {
 }
 
 .toggle-all + label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 60px;
-	height: 34px;
+	height: 65px;
 	font-size: 0;
 	position: absolute;
-	top: -52px;
-	left: -13px;
-	-webkit-transform: rotate(90deg);
-	transform: rotate(90deg);
+	top: -65px;
+	left: -0;
 }
 
 .toggle-all + label:before {
 	content: '❯';
+	display: inline-block;
 	font-size: 22px;
 	color: #949494;
 	padding: 10px 27px 10px 27px;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
 }
 
 .toggle-all:checked + label:before {
@@ -200,7 +205,7 @@ body {
 }
 
 .todo-list li .toggle:checked + label {
-	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23949494%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20fill%3D%22%23484848%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22%2F%3E%3C%2Fsvg%3E');
+	background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%2359A193%22%20stroke-width%3D%223%22%2F%3E%3Cpath%20fill%3D%22%233EA390%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22%2F%3E%3C%2Fsvg%3E');
 }
 
 .todo-list li label {
@@ -233,7 +238,8 @@ body {
 	transition: color 0.2s ease-out;
 }
 
-.todo-list li .destroy:hover {
+.todo-list li .destroy:hover,
+.todo-list li .destroy:focus {
 	color: #C18585;
 }
 
@@ -308,11 +314,11 @@ body {
 }
 
 .filters li a:hover {
-	border-color: #CF7D7D;
+	border-color: #DB7676;
 }
 
 .filters li a.selected {
-	border-color: #7B2D2D;
+	border-color: #CE4646;
 }
 
 .clear-completed,
@@ -378,5 +384,7 @@ html .clear-completed:active {
 :focus,
 .toggle:focus + label,
 .toggle-all:focus + label {
-	outline:  #CF7D7D solid;
+	box-shadow: 0 0 2px 2px #CF7D7D;
+	outline: 0;
+	z-index: 3;
 }
