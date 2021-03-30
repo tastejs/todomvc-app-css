@@ -234,7 +234,6 @@ body {
 	margin: auto 0;
 	font-size: 30px;
 	color: #949494;
-	margin-bottom: 11px;
 	transition: color 0.2s ease-out;
 }
 
@@ -245,6 +244,9 @@ body {
 
 .todo-list li .destroy:after {
 	content: '×';
+	display: block;
+	height: 100%;
+	line-height: 1.1;
 }
 
 .todo-list li:hover .destroy {
