@@ -4,14 +4,11 @@
 
 ![](screenshot.png)
 
-
 ## Install
 
-
+```sh
+npm install todomvc-app-css
 ```
-$ npm install todomvc-app-css
-```
-
 
 ## Getting started
 
@@ -20,7 +17,6 @@ $ npm install todomvc-app-css
 ```
 
 See the [TodoMVC app template](https://github.com/tastejs/todomvc-app-template).
-
 
 ## License
 

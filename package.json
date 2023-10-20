@@ -7,7 +7,10 @@
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=4"
 	},
 	"files": [
 		"index.css"
